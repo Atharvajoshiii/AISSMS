@@ -1,0 +1,342 @@
+/* Reset default styles */
+html{
+  scroll-behavior: smooth;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Global styles */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f1f1f1;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Header */
+  header {
+    background-color: #ee4266;
+    color: white;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    height: 15vh;
+  }
+  
+  nav {
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+  }
+  
+  .logo h1 {
+    font-size: 30px;
+    /* font-weight: bold; */
+    font-family: 'Edu NSW ACT Foundation', cursive;
+    font-family: 'Pacifico', cursive;
+  }
+  
+  .navigation li {
+    display: inline-block;
+    margin-left: 20px;
+  }
+  
+  .navigation li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+  }
+  
+  /* Hero section */
+  .hero {
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('back2.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+  }
+  
+  .hero-content {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .hero h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+  }
+  
+  .hero p {
+    font-size: 23px;
+    margin-bottom: 30px;
+  }
+  
+  .cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ee4266;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+  .text-3 span{
+    color: crimson;
+    font-weight: 500;
+}
+  
+  .cta-button:hover {
+    border: 2px solid red;
+    color: #ee4266;
+    background-color: #fff;
+  }
+  
+  /* Services section */
+  .card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* Card */
+  .card {
+    width: 300px;
+    height: 380px;
+    background-color: #ee4266;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.7);
+    margin: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: 0.4s;
+  }
+
+  .card:hover{
+      transform: scale(1.04);
+  }
+
+  /* Card Image */
+  .card img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+  }
+
+  /* Card Content */
+  .card h3 {
+      font-family: Arial, sans-serif;
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  .card p {
+  
+    font-size: 14px;
+    color: #fff;
+  }
+  .service_head{
+      display: flex;
+      justify-content: center;
+      /* align-items: center; */
+  }
+  .service_head h1{
+      font-family: Arial, sans-serif;
+      font-size: 35px;
+  }
+  .services{
+    height: 100vh;
+    margin-top: 20px;
+  }
+  @media (max-width: 768px) {
+    .card-container {
+      flex-wrap: wrap;
+    }
+
+    .card {
+      width: 100%;
+      max-width: 400px;
+    }
+  }
+
+  
+  .menu-icon {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  
+  
+  /* Media queries */
+  @media (max-width: 768px) {
+    .navigation {
+      display: none;
+    }
+    .hero h2 {
+      font-size: 24px;
+    }
+    .hero p {
+      font-size: 16px;
+    }
+    .service-card {
+      margin-bottom: 20px;
+    }
+    .service-card img {
+      width: 150px;
+      height: 150px;
+    }
+    footer {
+      padding: 10px 0;
+    }
+    
+  }
+  .contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('back2.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  .company-info {
+    width: 50%;
+    padding: 40px;
+    background-color: transparent;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px 20px;
+  }
+  
+  .contact-form {
+    width: 50%;
+    padding: 40px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 40px 40px;
+    
+  }
+  
+  #contact-us-head{
+    margin-top: 0;
+    color: rgb(66, 160, 236);
+    font-size: 50px;
+  }
+  
+  p {
+    color: white;
+    font-size: 20px;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    transition: border-color 0.3s ease;
+  }
+  
+  .form-group input:focus,
+  .form-group textarea:focus {
+    outline: none;
+    border-color: #4caf50;
+  }
+  
+  .form-group textarea {
+    height: 100px;
+    resize: none;
+  }
+  
+  .form-group button {
+    padding: 10px 20px;
+    background-color: #4caf50;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .form-group button:hover {
+    background-color: #45a049;
+  }
+
+  .footer{
+    height: 50vh;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+  }
+  .logo{
+    width: 30%;
+  }
+  .logo img{
+    height: 200px;
+  }
+  .footer_content{
+    color: white;
+    width: 40%;
+  }
+  .footer_content ul{
+    margin-top: 40px;
+  }
+  .footer_content ul li{
+    list-style: none;
+    transition: 0.4s;
+
+  }
+  .footer_content ul li:hover{
+    transform: scale(0.9);
+
+  }
+  .social{
+    color: white;
+    margin-top: 30px;
+  }
+  .symbols i{
+    padding: 20px;
+
+  }
+.feedback{
+  background-color: rgb(0, 157, 255);
+  color: white;
+  height: 40px;
+  width: 300px;
+  border: none;
+  border-radius: 10px;
+}
+
+  
+  

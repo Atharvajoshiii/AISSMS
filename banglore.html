@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hospital Listings</title>
+  <style>
+    /* CSS styles here */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f1f1f1;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: transparent;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      border-radius: 4px;
+    }
+
+    #head{
+      text-align: center;
+      margin-bottom: 20px;
+      color: white;
+      font-size: 40px;
+      font-weight: bold;
+      font-family: cursive;
+    }
+
+    .hospital-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .hospital-item {
+      border: none;
+      /* background-color: white; */
+      color: #fff;
+      border-radius: 4px;
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+
+    .hospital-name {
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .hospital-description {
+      margin-bottom: 20px;
+    }
+
+    .book-now-button {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #ee4266;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .book-now-button:hover {
+      background-color: #c81c4b;
+    }
+    .navbar{
+    display: flex;
+    height: 10vh;
+    background-color: rgb(9, 4, 4);
+    color: aliceblue;
+    padding: 10px;
+}
+#btn{
+    height: 30px;
+    width: 100px;
+    background-color: rgb(224, 68, 68);
+    color: white;
+    font-size: 20px;
+    border: none;
+    border-radius: 10px;
+    padding: 2px;
+    margin-left: 75%;
+    margin-top: 10px;
+}
+.navbar h1{
+  margin-top: 10px;
+}
+body {
+      margin: 0;
+      padding: 0;
+    }
+
+    #video-container {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      z-index: -1;
+    }
+
+    #video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    #btn a{
+      text-decoration: none;
+      color: white;
+    }
+  </style>
+</head>
+<script>
+    (function (w, d, s, o, f, js, fjs) {
+      w["botsonic_widget"] = o;
+      w[o] =
+        w[o] ||
+        function () {
+          (w[o].q = w[o].q || []).push(arguments);
+        };
+      (js = d.createElement(s)), (fjs = d.getElementsByTagName(s)[0]);
+      js.id = o;
+      js.src = f;
+      js.async = 1;
+      fjs.parentNode.insertBefore(js, fjs);
+    })(window, document, "script", "Botsonic", "https://d1m9uqhmlogh4h.cloudfront.net/CDN/botsonic.min.js");
+    Botsonic("init", {
+      serviceBaseUrl: "https://api.writesonic.com",
+      token: "c76fc591-1646-4c37-9f1f-a690a8c567a7",
+    });
+  </script>
+<body>
+  <div id="video-container">
+    <video id="video" autoplay muted loop>
+      <source src="background_hospitalname.mp4" type="video/mp4">
+      <!-- Add additional <source> elements for other video formats if desired -->
+    </video>
+  </div>
+  <nav class="navbar">
+    <h1> Care and Cure </h1>
+    <button id="btn"> <a href="index.html"> home </a> </button>
+  </nav>
+  <div class="container">
+    <h1 id="head">Lets choose the best hospitals for you !!</h1>
+
+    <ul class="hospital-list">
+        <li class="hospital-item">
+          <h2 class="hospital-name">Columbia Asia Hospital Bangalore</h2>
+          <p class="hospital-description">Columbia Asia Hospitals, Bangalore has an International standard infrastructure and follows globally benchmarked standards of medical, nursing and operating protocols making it the preferred healthcare destination for patients from around the world. The Columbia Asia Pvt. Ltd. center has a high-end NICU and PICU facility available.</p>
+          <button class="book-now-button"onclick="showbooking()">Book Now</button>
+        </li>
+        <li class="hospital-item">
+          <h2 class="hospital-name">Manipal Hospital Bangalore</h2>
+          <p class="hospital-descripitin">The flagship hospital of Manipal Health Enterprises, Manipal Hospital HAL Airport Road, is a 600 bed quaternary care facility set up in 1991. Situated in the heart of Bangalore, Manipal Hospital HAL Airport Road provides care in over 60 specialities under one roof.
+          </p>
+          </p>
+          <button class="book-now-button"onclick="showbooking()">Book Now</button>
+        </li>
+        <li class="hospital-item">
+          <h2 class="hospital-name">Aruna Asaf Ali Govt. Hospital Bangalore</h2>
+          <p class="hospital-description">This hospital is working since pre-independence period and was known as Police Hospital. Initially this was providing medical facilities to Delhi Police personnel only and was also handling Medico-legal work and Post-mortems of the whole of Delhi. However in 1984 name of this hospital was changed from Police Hospital to Civil Hospital. Then in 1994 the foundation stone was laid for first Phase of hospital expansion, which was completed on 23rd August 1996 with 40 beds, and again the name was changed to Aruna Asaf Ali Government Hospital. Later in July 2000 another building in second phase was constructed with facilities for Operation and addition of 60 more beds.
+  
+          </p>
+          <button class="book-now-button"onclick="showbooking()">Book Now</button>
+        </li>
+        <li class="hospital-item">
+          <h2 class="hospital-name">Apollo Hospital Banglore</h2>
+          <p class="hospital-description">Apollo Hospitals, Bangalore is a tertiary care flagship unit of the Apollo Hospitals Group. It has indeed made a mark in the city of Bangalore. The Apollo Hospitals at Bannerghatta is a 250 bedded hospital, located in the heart of the capital.</p>
+          <button class="book-now-button"onclick="showbooking()">Book Now</button>
+        </li>
+        <li class="hospital-item">
+          <h2 class="hospital-name">People's Tree Hospital Bangalore</h2>
+          <p class="hospital-description">People Tree Hospital is a multi-specialty hospital located in Bangalore, India. It is known for its state-of-the-art facilities and advanced medical technology. The Hospital provides specialties, including Cardiology, Neurology, Orthopedics, Gastroenterology, Urology, Oncology, General Medicine, etc.</p>
+          <button class="book-now-button" onclick="showbooking()">Book Now</button>
+        </li>
+      </ul>
+  </div>
+
+  <script>
+
+    
+    function showbooking(){
+        window.location.href = 'hospital.html';
+    }
+  </script>
+</body>
+</html>

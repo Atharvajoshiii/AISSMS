@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hospital Listings</title>
+  <style>
+    /* CSS styles here */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f1f1f1;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: transparent;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      border-radius: 4px;
+    }
+
+    #head{
+      text-align: center;
+      margin-bottom: 20px;
+      color: white;
+      font-size: 40px;
+      font-weight: bold;
+      font-family: cursive;
+    }
+
+    .hospital-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .hospital-item {
+      border: none;
+      /* background-color: white; */
+      color: #fff;
+      border-radius: 4px;
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+
+    .hospital-name {
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .hospital-description {
+      margin-bottom: 20px;
+    }
+
+    .book-now-button {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #ee4266;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .book-now-button:hover {
+      background-color: #c81c4b;
+    }
+    .navbar{
+    display: flex;
+    height: 10vh;
+    background-color: rgb(9, 4, 4);
+    color: aliceblue;
+    padding: 10px;
+}
+#btn{
+    height: 30px;
+    width: 100px;
+    background-color: rgb(224, 68, 68);
+    color: white;
+    font-size: 20px;
+    border: none;
+    border-radius: 10px;
+    padding: 2px;
+    margin-left: 75%;
+    margin-top: 10px;
+}
+.navbar h1{
+  margin-top: 10px;
+}
+body {
+      margin: 0;
+      padding: 0;
+    }
+
+    #video-container {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      z-index: -1;
+    }
+
+    #video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    #btn a{
+      text-decoration: none;
+      color: white;
+    }
+  </style>
+</head>
+<script>
+  (function (w, d, s, o, f, js, fjs) {
+    w["botsonic_widget"] = o;
+    w[o] =
+      w[o] ||
+      function () {
+        (w[o].q = w[o].q || []).push(arguments);
+      };
+    (js = d.createElement(s)), (fjs = d.getElementsByTagName(s)[0]);
+    js.id = o;
+    js.src = f;
+    js.async = 1;
+    fjs.parentNode.insertBefore(js, fjs);
+  })(window, document, "script", "Botsonic", "https://d1m9uqhmlogh4h.cloudfront.net/CDN/botsonic.min.js");
+  Botsonic("init", {
+    serviceBaseUrl: "https://api.writesonic.com",
+    token: "c76fc591-1646-4c37-9f1f-a690a8c567a7",
+  });
+</script>
+<body>
+  <div id="video-container">
+    <video id="video" autoplay muted loop>
+      <source src="background_hospitalname.mp4" type="video/mp4">
+      <!-- Add additional <source> elements for other video formats if desired -->
+    </video>
+  </div>
+  <nav class="navbar">
+    <h1> Care and Cure </h1>
+    <button id="btn"> <a href="index.html"> home </a> </button>
+  </nav>
+  <div class="container">
+    <h1 id="head">Lets choose the best hospitals for you !!</h1>
+
+    <ul class="Here are Avaibilities for your Care & Cure">
+        <li class="hospital-item">
+          <h2 class="hospital-name">Apollo Hospitals</h2>
+          <p class="hospital-description">Apollo Hospital is Centres of Excellence. + 14 specialities are available in Hospital including 
+                                          General Physician,Radiologist,General Surgeon,Gynecologist/Obstetrician,Internal Medicine,Nephrologist,
+                                          Orthopedist,Pulmonologist...Hospital Provides Fast Service,24/7 Emergency Care.
+                                          The mission of Apollo is to bring healthcare of International standards within the reach of every individual. </p>
+          <button class="book-now-button"onclick="showbooking()">Book Now</button>
+        </li>
+        <li class="hospital-item">
+          <h2 class="hospital-name">Ashoka Medicover Hospitals </h2>
+          <p class="hospital-description">Ashoka Medicover Hospital is the biggest and the best hospital in Nashik, North Maharashtra. 
+                                          with ultra-modern healthcare facilities and a huge team of super speciality full-time doctors and consultants,
+                                          With high-end diagnostic facilities, Hospital has the most advanced Cathlab with Ivus, OCT, FFR,
+                                          24x7 ultra-modern radiology services with CT Scan, MRI, USG, Mammography, BMD, Digital X Ray,
+                                          advanced USG guided Gastroscopes with a high-end endoscope, Manometry, and Capsule Endoscopy with 16 Cameras.</p>
+          <button class="book-now-button"onclick="showbooking()">Book Now</button>
+        </li>
+        <li class="hospital-item">
+          <h2 class="hospital-name"> NIMS Hospital</h2>
+          <p class="hospital-description"> NIMS Hospital is the best Multispeciality Hospital in Nashik
+                                          The hospital has highly qualified medical persons and technicians to assure healthcare delivery of the highest quality.
+                                        It offers a wide range of clinical services such as General surgery, obstetrics & gynecology,minimally invasive surgeries,
+                                        ENT surgery, pediatrics and neonatology, ophthalmology, urology, gastroenterology, Critical care physicians, orthopedics, 
+                                        consultant physician and psychiatrists.
+          </p>
+          <button class="book-now-button"onclick="showbooking()">Book Now</button>
+        </li>
+        <li class="hospital-item">
+          <h2 class="hospital-name">Sahyadri Super Speciality Hospital</h2>
+          <p class="hospital-description">Sahyadri Super Speciality Hospital Nashik is First Hospital in North Maharashtra to perform Liver Transplants,
+                                          and has performed highest Nos. of Liver Transplants till date in North Maharashtra. 
+                                          The Hospital has performed over 23,000 Cardiac Procedures (Angiography, Angioplasty and Other Cardiac Procedures)
+                                          also performs North Maharashtra's highest number of Cardiac Surgeries.
+          </p>
+          <button class="book-now-button"onclick="showbooking()">Book Now</button>
+        </li>
+        <li class="hospital-item">
+          <h2 class="hospital-name">Apex Wellness Hospital</h2>
+          <p class="hospital-description">Apex Wellness Hospital in Nashik founded in 2020  is a dedicated Super Speciality Hospital offering compressive
+                                          end2end care in oncology neurosurgery orthopedics and joint replacement,
+                                          as well as General medicine Multi-specialty Hospital in Nashik,
+                                         Hospital has Expertise in Cancer,Gastroenterology,Cardiology and many more.</p> 
+          <button class="book-now-button" onclick="showbooking()">Book Now</button>
+        </li>
+      </ul>
+  </div>
+
+  <script>
+
+    
+    function showbooking(){
+        window.location.href = 'hospital.html';
+    }
+  </script>
+</body>
+</html>

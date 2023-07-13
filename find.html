@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="find.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<script>
+  (function (w, d, s, o, f, js, fjs) {
+    w["botsonic_widget"] = o;
+    w[o] =
+      w[o] ||
+      function () {
+        (w[o].q = w[o].q || []).push(arguments);
+      };
+    (js = d.createElement(s)), (fjs = d.getElementsByTagName(s)[0]);
+    js.id = o;
+    js.src = f;
+    js.async = 1;
+    fjs.parentNode.insertBefore(js, fjs);
+  })(window, document, "script", "Botsonic", "https://d1m9uqhmlogh4h.cloudfront.net/CDN/botsonic.min.js");
+  Botsonic("init", {
+    serviceBaseUrl: "https://api.writesonic.com",
+    token: "c76fc591-1646-4c37-9f1f-a690a8c567a7",
+  });
+</script>
+<script type="text/javascript">
+  function redirectToPage() {
+    // Get the selected option from the dropdown menu
+    var selectedOption = document.getElementById("pageSelect").value;
+
+    // Redirect to the selected page
+    if (selectedOption === "page1") {
+      window.location.href = "bombay.html";
+    } else if (selectedOption === "page2") {
+      window.location.href = "pune.html";
+    } else if (selectedOption === "page3") {
+      window.location.href = "nashik.html";
+    }  else if (selectedOption === "page4") {
+      window.location.href = "banglore.html";
+    }
+    // Add more conditions for additional pages if needed
+  }
+</script>
+<body>
+  <nav class="navbar">
+    <h1> Care and Cure </h1>
+    <button id="btn" onclick="home()"> home </button>
+  </nav>
+  <div class="content">
+    <div class="select">
+      <select id="pageSelect" 
+        <option value="page1">Mumbai</option>
+        <option value="page2">Pune</option>
+        <option value="page3">Nashik</option>
+        <option value="page4">Banglore</option>
+      </select>
+      
+      <button onclick="redirectToPage()" id="button">Search</button> 
+    </div>
+    <h1 id="loc">LOCATION  <i class="fa-solid fa-location-dot"></i> </h1>
+  
+  
+    
+  </div>
+
+  <script>
+    function home(){
+      window.location.href='index.html';
+    }
+  </script>
+  
+</body>
+</html>

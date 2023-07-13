@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<header>
+    <title>Document</title>
+    
+</header>
+<style>
+    root{
+
+--background: #3C343D;
+}
+
+* {
+
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+body{
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.background{
+
+background-color: var(--background);
+display: grid;
+place-items: center;
+height: 100vh;
+}
+
+.gallery {
+
+display: flex;
+flex-wrap: wrap;
+gap: 16px;
+max-width: 800px;
+}
+
+.card{
+
+position: relative;
+left: 0px;
+width: 80px;
+border-radius: 16px;
+height: 360px;
+overflow: hidden;
+background-color: var(--background);
+transition: 0.4s ease-in-out;
+box-shadow: 0 5px 12px rgba(0, 0, 0, 0.5);
+flex: 0.25;
+}
+
+
+.card img{
+
+height: 360px;
+}
+
+.card:hover{
+
+flex: 2;
+font-weight: bold;
+cursor: pointer;
+border-radius: 8px;
+}
+.doctor{
+    display: flex;
+}
+.content{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 70px;
+    
+}
+#heading{
+    font-size: 70px;
+    color: rgb(92, 180, 223);
+    font-family: sans-serif;
+}
+#para{
+    font-size: 20px;
+    color: white;
+    font-family: cursive;
+}
+</style>
+<script>
+    (function (w, d, s, o, f, js, fjs) {
+      w["botsonic_widget"] = o;
+      w[o] =
+        w[o] ||
+        function () {
+          (w[o].q = w[o].q || []).push(arguments);
+        };
+      (js = d.createElement(s)), (fjs = d.getElementsByTagName(s)[0]);
+      js.id = o;
+      js.src = f;
+      js.async = 1;
+      fjs.parentNode.insertBefore(js, fjs);
+    })(window, document, "script", "Botsonic", "https://d1m9uqhmlogh4h.cloudfront.net/CDN/botsonic.min.js");
+    Botsonic("init", {
+      serviceBaseUrl: "https://api.writesonic.com",
+      token: "c76fc591-1646-4c37-9f1f-a690a8c567a7",
+    });
+  </script>
+<body>
+    <div class="doctor">
+        
+
+    <div class="content">
+        <h1 id="heading"> The best doctors at your service </h1>
+        <p id="para"> we have the best solution of all your medical problems <br> we will have the best doctors available for you at much affordable prices <br> your health is our responsibility now !!!</p>
+    </div>
+    <span class="background">
+        <section class="gallery">
+            <article class="card">
+                <figure>
+                    <img src="doct1.png" alt="Preview" title="Preview">
+                </figure>
+            </article>
+
+            <article class="card">
+                <figure>
+                    <img src="doct2.png" alt="Preview" title="Preview">
+                </figure>
+            </article>
+
+            <article class="card">
+                <figure>
+                    <img src="doctor1.jpg" alt="Preview" title="Preview">
+                </figure>
+            </article>
+
+            <article class="card">
+                <figure>
+                    <img src="doctor2.jpg" alt="Preview" title="">
+                </figure>
+            </article>
+
+            <article class="card">
+                <figure>
+                    <img src="doctor3.jpg" alt="Preview" title="Preview">
+                </figure>
+            </article>
+
+        </section>
+    </span>
+</div>
+    
+</body>
+</html>

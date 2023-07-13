@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome Animation</title>
+  <link rel="stylesheet" href="indie.sass">
+  <style>
+    /* CSS styles here */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('animation_background.jpg');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    .welcome-section {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      /* background-color: #f1f1f1; */
+      background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('animation_background.jpg');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      opacity: 0;
+      animation: fade-in 1s ease-in-out forwards;
+    }
+
+    @keyframes fade-in {
+      0% {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    h1 {
+      font-size: 36px;
+      color: #ffffff;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    }
+
+  </style>
+</head>
+<body>
+    
+  <div class="welcome-section">
+    <h1>We are getting at your service please wait</h1>
+  </div>
+
+  <script>
+    // JavaScript code here
+    setTimeout(function() {
+      window.location.href = 'find.html';
+    }, 5000); // Redirect after 3 seconds
+  </script>
+</body>
+</html>
+

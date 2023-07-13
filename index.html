@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HealthCare+</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@500&family=Pacifico&display=swap" rel="stylesheet">
+</head>
+<script>
+  (function (w, d, s, o, f, js, fjs) {
+    w["botsonic_widget"] = o;
+    w[o] =
+      w[o] ||
+      function () {
+        (w[o].q = w[o].q || []).push(arguments);
+      };
+    (js = d.createElement(s)), (fjs = d.getElementsByTagName(s)[0]);
+    js.id = o;
+    js.src = f;
+    js.async = 1;
+    fjs.parentNode.insertBefore(js, fjs);
+  })(window, document, "script", "Botsonic", "https://d1m9uqhmlogh4h.cloudfront.net/CDN/botsonic.min.js");
+  Botsonic("init", {
+    serviceBaseUrl: "https://api.writesonic.com",
+    token: "c76fc591-1646-4c37-9f1f-a690a8c567a7",
+  });
+</script>
+
+<body>
+  <header>
+    <nav>
+      <div class="logo">
+        <h1>care and cure</h1>
+      </div>
+      
+      <ul class="navigation">
+        <li><a href="#">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="doctor.html">Doctors</a></li>
+        <li><a href="project.html">About Us</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h2>Your Health is Our Priority</h2>
+      <p>
+        Find quality treatment at affordable prices 
+      </p>
+      
+      <a href="animation.html" class="cta-button" onclick="findhospital()">Find hospitals</a>
+    </div>
+  </section>
+
+<section class="services" id="services">
+  <div class="service_head">
+    <h1> our services </h1>
+</div>
+<section class="card-container">
+<div class="card">
+  <img src="doct1.png" alt="Image 1">
+  <h3> doctor service</h3>
+  <p> we find the best hospitals for you having high quality and well educated doctors as your helath is our first priority</p>
+</div>
+<div class="card">
+  <img src="doct2.png" alt="Image 2">
+  <h3>Medical equipments</h3>
+  <p>we dont compramise in medical equipments , now every citizen in india will get best medical treatment at low cost</p>
+</div>
+<div class="card">
+  <img src="doct3.png" alt="Image 3">
+  <h3>Ambulance facility</h3>
+  <p>you will get emergency treatment by our best ambulance facility , they will be available at your service is just 30 min after your call</p>
+</div>
+</section>
+
+</section>
+
+
+<section class="contact_us">
+  <div class="contact">
+    <div class="company-info">
+      <h2 id="contact-us-head">Care and cure</h2> <br>
+      <p><strong>Name:</strong> care and cure co. Ltd.</p> <br>
+      <p><strong>Address:</strong> BVP, pune,India</p> <br>
+      <p><strong>Email:</strong> atharvajoshi814@gmail.com</p> <br>
+      <p><strong>Contact Number:</strong> +91 8888000077</p>
+    </div>
+    <div class="contact-form">
+      <h2>Contact Us</h2> <br>
+      <form>
+        <div class="form-group">
+          <label for="name">Your Name:</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Your Email:</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="phone">Contact Number:</label>
+          <input type="text" id="phone" name="phone" required>
+        </div>
+        
+        <div class="form-group">
+          <button type="submit">Send Message</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<section class="footer">
+  <div class="logo">
+    <img src="footer_logo.png" alt="">
+  </div>
+  <div class="footer_content">
+    <ul>
+      <li> <h2> Services </h2></li> <br>
+      <li>doctors</li> <br>
+      <li>Hospitals</li> <br>
+      <li>Medical quipments</li> <br>
+      <li>Ambulance service</li> <br>
+    </ul>
+  </div>
+  <div class="social">
+    <H1>Join us through social media</H1>
+    <br> <br>
+    <div class="symbols">
+      <i class="fa-brands fa-linkedin fa-2xl" class="icons"></i> 
+      <i class="fa-brands fa-square-twitter fa-2xl" class="icons"></i>
+      <i class="fa-brands fa-square-instagram fa-2xl"></i>
+    </div> <br> <br>
+    <button class="feedback">
+       feedback
+    </button>
+
+  </div>
+</section>
+
+
+
+
+
+
+
+  
+
+
+  <script src="script.js">
+
+    
+function findhospital(){
+      window.location.href = 'animation.html';
+    }
+
+
+  </script>
+</body>
+</html>

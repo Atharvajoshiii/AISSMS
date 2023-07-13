@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hospital Listings</title>
+  <style>
+    /* CSS styles here */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f1f1f1;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: transparent;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      border-radius: 4px;
+    }
+
+    #head{
+      text-align: center;
+      margin-bottom: 20px;
+      color: white;
+      font-size: 40px;
+      font-weight: bold;
+      font-family: cursive;
+    }
+
+    .hospital-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .hospital-item {
+      border: none;
+      /* background-color: white; */
+      color: #fff;
+      border-radius: 4px;
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+
+    .hospital-name {
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .hospital-description {
+      margin-bottom: 20px;
+    }
+
+    .book-now-button {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #ee4266;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .book-now-button:hover {
+      background-color: #c81c4b;
+    }
+    .navbar{
+    display: flex;
+    height: 10vh;
+    background-color: rgb(9, 4, 4);
+    color: aliceblue;
+    padding: 10px;
+}
+#btn{
+    height: 30px;
+    width: 100px;
+    background-color: rgb(224, 68, 68);
+    color: white;
+    font-size: 20px;
+    border: none;
+    border-radius: 10px;
+    padding: 2px;
+    margin-left: 75%;
+    margin-top: 10px;
+}
+.navbar h1{
+  margin-top: 10px;
+}
+body {
+      margin: 0;
+      padding: 0;
+    }
+
+    #video-container {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      z-index: -1;
+    }
+
+    #video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    #btn a{
+      text-decoration: none;
+      color: white;
+    }
+  </style>
+</head>
+<script>
+  (function (w, d, s, o, f, js, fjs) {
+    w["botsonic_widget"] = o;
+    w[o] =
+      w[o] ||
+      function () {
+        (w[o].q = w[o].q || []).push(arguments);
+      };
+    (js = d.createElement(s)), (fjs = d.getElementsByTagName(s)[0]);
+    js.id = o;
+    js.src = f;
+    js.async = 1;
+    fjs.parentNode.insertBefore(js, fjs);
+  })(window, document, "script", "Botsonic", "https://d1m9uqhmlogh4h.cloudfront.net/CDN/botsonic.min.js");
+  Botsonic("init", {
+    serviceBaseUrl: "https://api.writesonic.com",
+    token: "c76fc591-1646-4c37-9f1f-a690a8c567a7",
+  });
+</script>
+<body>
+  <div id="video-container">
+    <video id="video" autoplay muted loop>
+      <source src="background_hospitalname.mp4" type="video/mp4">
+      <!-- Add additional <source> elements for other video formats if desired -->
+    </video>
+  </div>
+  <nav class="navbar">
+    <h1> Care and Cure </h1>
+    <button id="btn"> <a href="index.html"> home </a> </button>
+  </nav>
+  <div class="container">
+    <h1 id="head">Lets choose the best hospitals for you !!</h1>
+
+    <ul class="Here are Avaibilities for your Care & Cure">
+      <li class="hospital-item">
+        <h2 class="hospital-name">Nanavati Super Speciality Hospital</h2>
+        <p class="hospital-description">Nanavati Max Super Speciality Hospital formerly known as 
+                                        Dr. Balabhai Nanavati Hospital is a private hospital located in Vile Parle,
+                                        Mumbai, India.focused Specialities for Medical Treatments and Surgeries. </p>
+        <button class="book-now-button" onclick="showbooking()">Book Now</button>
+      </li>
+      <li class="hospital-item">
+        <h2 class="hospital-name">Lilavati Hospital and Research Centre</h2>
+        <p class="hospital-descripion">it is a private hospital located in Bandra,Mumbai,India.
+                                       acknowledged globally as the centre of medical excellence.</p>
+        <button class="book-now-button" onclick="showbooking()">Book Now</button>
+      </li>
+      <li class="hospital-item">
+        <h2 class="hospital-name">Kokilaben Dhirubai Ambani Hospital</h2>
+        <p class="hospital-description">The hospital has boasted of many firsts not only in India but also in Asia.
+                                       Dhirubhai Ambani Hospital has the first 3-room intra-operative MRI suite (IMRIS) in Asia,
+                                       Asia's first EDGE Radiosurgery system from Varian Medical Systems, India's 1st Spine Surgery Suite featuring the O-arm and many more. </p>
+        <button class="book-now-button" onclick="showbooking()">Book Now</button>
+      </li>
+      <li class="hospital-item">
+        <h2 class="hospital-name">Breach candy Hospital</h2>
+        <p class="hospital-description">the hospital is renowned for its medical expertise, excellent nursing care and quality diagnostics,
+                                          Specialists doctors.</p>
+        <button class="book-now-button" onclick="showbooking()">Book Now</button>
+      </li>
+      <li class="hospital-item">
+        <h2 class="hospital-name">Bombay Hospital and Medical Research centre</h2>
+        <p class="hospital-description">The specialties of the hospital include cardiology, chest medicine, dermatology, nephrology, gastroenterology, 
+                                         surgical oncology, neurology and many more.</p>
+        <button class="book-now-button" onclick="showbooking()">Book Now</button>
+      </li>
+    </ul>
+  </div>
+
+  <script>
+
+    
+    function showbooking(){
+        window.location.href = 'hospital.html';
+    }
+  </script>
+</body>
+</html>

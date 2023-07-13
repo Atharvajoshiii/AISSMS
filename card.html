@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Card Section</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@500&family=Pacifico&display=swap" rel="stylesheet">
+  <style>
+    /* Card Container */
+    .card-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    /* Card */
+    .card {
+      width: 300px;
+      height: 350px;
+      background-color: #ee4266;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.7);
+      margin: 20px;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      transition: 0.4s;
+    }
+
+    .card:hover{
+        transform: scale(1.04);
+    }
+
+    /* Card Image */
+    .card img {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 20px;
+    }
+
+    /* Card Content */
+    .card h3 {
+        font-family: Arial, sans-serif;
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    .card p {
+    
+      font-size: 16px;
+      color: #fff;
+    }
+    .service_head{
+        display: flex;
+        justify-content: center;
+        /* align-items: center; */
+    }
+    .service_head h1{
+        font-family: Arial, sans-serif;
+    }
+  </style>
+</head>
+<body>
+    <div class="service_head">
+        <h1> our services </h1>
+    </div>
+  <section class="card-container">
+    <div class="card">
+      <img src="doct1.png" alt="Image 1">
+      <h3> doctor service</h3>
+      <p> we find the best hospitals for you having high quality and well educated doctors as your helath is our first priority</p>
+    </div>
+    <div class="card">
+      <img src="doct2.png" alt="Image 2">
+      <h3>Medical equipments</h3>
+      <p>we dont compramise in medical equipments , now every citizen in india will get best medical treatment at low cost</p>
+    </div>
+    <div class="card">
+      <img src="doct3.png" alt="Image 3">
+      <h3>Ambulance facility</h3>
+      <p>you will get emergency treatment by our best ambulance facility , they will be available at your service is just 30 min after your call</p>
+    </div>
+  </section>
+</body>
+</html>
